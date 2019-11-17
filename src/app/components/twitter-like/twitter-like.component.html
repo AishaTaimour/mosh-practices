@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-1">
+    <span (click)="like()" class="glyphicon glyphicon-heart"
+          [class.active]="isLiked"
+          [class.not-active]="!isLiked">
+    </span>
+    </div>
+    <div class="col-xs-2">{{ likesCount }}</div>
+  </div>
+</div>
